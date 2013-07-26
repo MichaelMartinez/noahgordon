@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="css/flexslider.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.css" type="text/css" />
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic'
           rel='stylesheet' type='text/css'>
 
@@ -141,6 +142,19 @@ Change your images in the main.css file.
 <!--Message Section-->
 <section id="message">
     <div class="container">
+
+        <div class="row margin-40">
+            <div class="span12 text-center">
+                <h2>Current Sponsors:</h2>
+            </div>
+            <div class="current_sponsors">
+                <a class="fancybox" href="http://www.aliasmx.com/"><img src="http://www.aliasmx.com/img/alias-logo.png" alt="" /></a>
+                <a class="fancybox" href="http://www.cobramotorcycle.com/"><img src="img/logo_cobra.gif" alt="" /></a>
+                <a class="fancybox" href="http://www.protaper.com/"><img src="http://www.protaper.com/wp-content/themes/rttheme6/images/2/logo.png" alt="" /></a>
+                <a class="fancybox" href="http://www.ride100percent.com/"><img src="http://www.ride100percent.com/wp-content/themes/ride100percent/images/logo-big.png" alt="" /></a>
+                <a class="fancybox" href="http://www.maximausa.com/"><img src="http://www.maximausa.com/images/logo.png" alt="" /></a>
+            </div>
+        </div>
         <div class="row margin-40">
             <div class="span12 text-center">
                 <h2>Please <a href="mailto:gordonsm3@yahoo.com"></i>Contact Us</a> for Sponsorship Opportunities</h2>
@@ -164,12 +178,7 @@ Change your images in the main.css file.
             <!--tn 1-->
             <div class="span4">
                 <div class="thumbs">
-                    <img src="img/tn_dirt1.jpg" alt="Image Size 430x280">
-                    <a href="race.html">
-        				<span class="title">
-        					<span><i class="icon-link icon-2x"></i></span>
-        				</span>
-                    </a>
+                    <a class="fancybox" href="img/dirt1.jpg"><img src="img/tn_dirt1.jpg" alt="" /></a>
                 </div>
 
                 <div class="project-title margin-30">
@@ -180,14 +189,15 @@ Change your images in the main.css file.
             <!--tn 2-->
             <div class="span4">
                 <div class="thumbs">
-                    <img src="img/tn_dirt2.jpg" alt="Image Size 430x280">
+                    <a class="fancybox" href="img/dirt2.jpg"><img src="img/tn_dirt2.jpg" alt="" /></a>
+                    <!--<img src="img/tn_dirt2.jpg" alt="Image Size 430x280">-->
                 </div>
             </div>
 
             <!--tn 3-->
             <div class="span4">
                 <div class="thumbs">
-                    <img src="img/tn_dirt3.jpg" alt="Image Size 430x280">
+                     <a class="fancybox" href="img/dirt3.jpg"><img src="img/tn_dirt3.jpg" alt="" /></a>
                 </div>
             </div>
 
@@ -199,7 +209,7 @@ Change your images in the main.css file.
             <!--tn 4-->
             <div class="span4">
                 <div class="thumbs">
-                    <img src="img/tn_dirt4.jpg" alt="Image Size 430x280">
+                     <a class="fancybox" href="img/dirt4.jpg"><img src="img/tn_dirt4.jpg" alt="" /></a>
                 </div>
 
 
@@ -208,7 +218,7 @@ Change your images in the main.css file.
             <!--tn 5-->
             <div class="span4">
                 <div class="thumbs">
-                    <img src="img/tn_dirt5.jpg" alt="Image Size 430x280">
+                     <a class="fancybox" href="img/dirt5.jpg"><img src="img/tn_dirt5.jpg" alt="" /></a>
 
                 </div>
 
@@ -218,7 +228,7 @@ Change your images in the main.css file.
             <!--tn 6-->
             <div class="span4">
                 <div class="thumbs">
-                    <img src="img/tn_dirt6.jpg" alt="Image Size 430x280">
+                     <a class="fancybox" href="img/dirt6.jpg"><img src="img/tn_dirt6.jpg" alt="" /></a>
 
                 </div>
 
@@ -233,7 +243,7 @@ Change your images in the main.css file.
             <!--tn 7-->
             <div class="span4">
                 <div class="thumbs">
-                    <img src="img/tn_dirt7.jpg" alt="Image Size 430x280">
+                     <a class="fancybox" href="img/dirt7.jpg"><img src="img/tn_dirt7.jpg" alt="" /></a>
 
                 </div>
 
@@ -243,7 +253,7 @@ Change your images in the main.css file.
             <!--tn 8-->
             <div class="span4">
                 <div class="thumbs">
-                    <img src="img/tn_dirt8.jpg" alt="Image Size 430x280">
+                     <a class="fancybox" href="img/dirt8.jpg"><img src="img/tn_dirt8.jpg" alt="" /></a>
 
                 </div>
 
@@ -448,8 +458,11 @@ Change your images in the main.css file.
 <script src="js/bootstrap.min.js"></script>
 <script src="js/main.js"></script>
 <script src="js/jquery.flexslider-min.js"></script>
+
+
 <script src="js/rotate.js"></script>
 <script src="js/twitter-feed.js"></script>
+<script type="text/javascript" src="js/jquery.fancybox.pack.js"></script>
 <!--Twitter Handle - Insert your Twitter username below ex: (screen_name=USERNAME&include) -->
 <!--<script src="http://api.twitter.com/1/statuses/user_timeline.json?screen_name=themearmada&include_rts=true&count=4&callback=twitterCallback2" type="text/javascript"></script>-->
 
@@ -467,6 +480,12 @@ Change your images in the main.css file.
             animation: "slide"
         });
     });
+</script>
+
+<script type="text/javascript">
+	$(document).ready(function() {
+		$(".fancybox").fancybox();
+	});
 </script>
 
 <script>

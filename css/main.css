@@ -741,7 +741,15 @@ a:hover {
     margin-bottom: 30px;
 }
 
-.thumbs a {
+.current_sponsors{
+    width: 100%;
+    float: left;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+/*.thumbs a {
     background-color: #223b66;
     bottom: -200px;
     color: white;
@@ -779,7 +787,7 @@ a:hover {
     transition: opacity 0.30s ease-in-out 0s, bottom 0.4s cubic-bezier(0.25, 0.500, 0, 1) 0s;
     -webkit-transition: opacity 0.30s ease-in-out 0s, bottom 0.4s cubic-bezier(0.25, 0.500, 0, 1) 0s;
 }
-
+*/
 .flexslider {
     margin: 0 0 60px;
     background: transparent;
